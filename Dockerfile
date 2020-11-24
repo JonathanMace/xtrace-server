@@ -3,7 +3,7 @@ FROM java:9
 MAINTAINER Jonathan Mace <jonathan.c.mace@gmail.com>
 
 # install needed packages
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && apt-get install -y --no-install-recommends --allow-unauthenticated \
       daemon \
   && rm -rf /var/lib/apt/lists/*
 
